@@ -75,7 +75,7 @@ round(avg(`salesView`.`discount`),2) AS `discount`,
 `salesView`.`userID` AS `userID` 
 from `salesView` 
 where `salesView`.`client` = `salesView`.`client` and `salesView`.`date` = `salesView`.`date` 
-group by `salesView`.`client`,`salesView`.`date` 
+group by `salesView`.`client`,`salesView`.`date`, `salesView`.`userID`
 order by `salesView`.`date` desc,`salesView`.`client`,`salesView`.`userID`;
 
 CREATE VIEW `groupedProductsView` AS select `productsView`.`name` AS `name`, `productsView`.`char1` AS `char1`,
