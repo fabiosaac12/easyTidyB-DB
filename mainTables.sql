@@ -34,7 +34,7 @@ CREATE TABLE `orders` (
 CREATE TABLE `products` (
   `id` int(6) NOT NULL AUTO_INCREMENT,
   `orderID` int(6) NOT NULL,
-  `name` varchar(20) NOT NULL,
+  `name` varchar(30) NOT NULL,
   `char1` varchar(15) DEFAULT NULL,
   `char2` varchar(15) DEFAULT NULL,
   `initialStock` int(6) NOT NULL,
